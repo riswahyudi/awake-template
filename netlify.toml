@@ -8,6 +8,9 @@
   package = "netlify-plugin-submit-sitemap"
 	[plugins.inputs]
 	baseUrl = "https://loving-johnson-3ec336.netlify.app/"
+	exclude = [
+      		'**/admin',
+	]
 	sitemapPath = "/sitemap.xml"
 	providers = [
 		"google",
