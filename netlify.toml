@@ -15,6 +15,11 @@
 		"bing",
 		"yandex"
 	]
-	exclude = [
-      		'**/**/admin',
-	]
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+    exclude = [
+      '**/admin',
+    ]
