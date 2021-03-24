@@ -3,3 +3,10 @@
   command = "npm run generate"
 [build.environment]
   NODE_VERSION = "14"
+  
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
+  filePath = "some/subfolder/sitemap.xml"
