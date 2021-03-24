@@ -5,8 +5,12 @@
   NODE_VERSION = "14"
   
 [[plugins]]
-package = "@netlify/plugin-sitemap"
-
-  [plugins.inputs]
-  buildDir = "public"
-  filePath = "some/subfolder/sitemap.xml"
+  package = "netlify-plugin-submit-sitemap"
+	[plugins.inputs]
+	baseUrl = "https://loving-johnson-3ec336.netlify.app/"
+	sitemapPath = "/sitemap.xml"
+	providers = [
+		"google",
+		"bing",
+		"yandex"
+	]
