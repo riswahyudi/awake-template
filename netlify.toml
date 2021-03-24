@@ -16,5 +16,5 @@
 		"yandex"
 	]
 	exclude = [
-      		'**/admin',
+      		'**/**/admin',
 	]
